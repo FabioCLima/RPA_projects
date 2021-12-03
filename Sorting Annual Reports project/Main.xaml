@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="858.666666666667,2754" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:a="clr-namespace:ArchiveLib;assembly=ArchiveLib" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1619.33333333333,4259.33333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="28">
+    <scg:List x:TypeArguments="x:String" Capacity="64">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -29,10 +29,17 @@
       <x:String>System.Runtime.InteropServices</x:String>
       <x:String>ArchiveLib</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>BalaReva.Zip</x:String>
+      <x:String>BalaReva.ZipUnzip</x:String>
+      <x:String>UiPath.VMware.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Activities.System.Encode</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Activities.System.Compression.Workflow</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -61,34 +68,40 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>BalaReva.Zip</AssemblyReference>
+      <AssemblyReference>UiPath.VMware.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="868.666666666667,2649.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1604.66666666667,4154.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Project Steps:&#xD;&#xA;1 - start open github repository." BrowserType="Chrome" DisplayName="Step 1" sap:VirtualizedContainerService.HintSize="826.666666666667,2557.33333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://github.com/udacity/nd340-c1-intro-to-uipath-rpa-project-starter">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Project Steps:&#xA;1 - start open github repository." BrowserType="Chrome" DisplayName="Step 1" sap:VirtualizedContainerService.HintSize="1562.66666666667,4062.66666666667" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://github.com/udacity/nd340-c1-intro-to-uipath-rpa-project-starter">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1586.66666666667,3278.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1528.66666666667,3914.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="zipPath" />
               <Variable x:TypeArguments="x:String" Name="extractPath" />
               <Variable x:TypeArguments="x:String" Name="strFolderPath" />
               <Variable x:TypeArguments="s:String[]" Name="arrFiles" />
+              <Variable x:TypeArguments="x:String" Name="newFolder" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1544.66666666667,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Project Steps:&#xD;&#xA;1 - download the zip file in the Downloads directory." ClickType="CLICK_SINGLE" DisplayName="Step 2" sap:VirtualizedContainerService.HintSize="1544.66666666667,151.333333333333" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1486.66666666667,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="Project Steps:&#xA;1 - download the zip file in the Downloads directory." ClickType="CLICK_SINGLE" DisplayName="Step 2" sap:VirtualizedContainerService.HintSize="1486.66666666667,151.333333333333" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -115,7 +128,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Step 2" sap:VirtualizedContainerService.HintSize="1544.66666666667,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Step 2" sap:VirtualizedContainerService.HintSize="1486.66666666667,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -137,41 +150,27 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Project Steps:&#xD;&#xA;3 - move the downloaded zip file from Downloads directory into Project directory." Destination="C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project" DisplayName="Step 3" sap:VirtualizedContainerService.HintSize="1544.66666666667,224" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="C:\Users\FLI028\Downloads\nd340-c1-intro-to-uipath-rpa-project-starter-master.zip">
+            <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Project Steps:&#xA;3 - move the downloaded zip file from Downloads directory into Project directory." Destination="C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project" DisplayName="Step 3" sap:VirtualizedContainerService.HintSize="1486.66666666667,224" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="C:\Users\FLI028\Downloads\nd340-c1-intro-to-uipath-rpa-project-starter-master.zip">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MoveFile>
-            <Assign sap2010:Annotation.AnnotationText="Project Steps:&#xD;&#xA;4 - Unzip the download file recently moved to the project directory." DisplayName="Step 4" sap:VirtualizedContainerService.HintSize="1544.66666666667,124" sap2010:WorkflowViewState.IdRef="Assign_1">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[zipPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\nd340-c1-intro-to-uipath-rpa-project-starter-master.zip</InArgument>
-              </Assign.Value>
+            <uascw:ExtractFiles DestinationFolderInfo="{x:Null}" Password="{x:Null}" CodePage="Default" DestinationFolder="C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="False" FileToExtract="nd340-c1-intro-to-uipath-rpa-project-starter-master.zip" sap:VirtualizedContainerService.HintSize="1486.66666666667,212" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
+            <ui:RenameFolderX sap2010:Annotation.AnnotationText="Intermediary Step to rename the unzip Folder to smaller name to avoid problems later in the workflow." DisplayName="Rename Folder" FolderPath="C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\nd340-c1-intro-to-uipath-rpa-project-starter-master" sap:VirtualizedContainerService.HintSize="1486.66666666667,179.333333333333" sap2010:WorkflowViewState.IdRef="RenameFolderX_3" NewName="AnnualReports">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </Assign>
-            <Assign DisplayName="Step 4" sap:VirtualizedContainerService.HintSize="1544.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[extractPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project</InArgument>
-              </Assign.Value>
-            </Assign>
-            <a:Expand_Archive ErrorMessage="{x:Null}" LiteralPath="{x:Null}" Success="{x:Null}" DestinationPath="[extractPath]" DisplayName="Unzip Files " Force="False" sap:VirtualizedContainerService.HintSize="1544.66666666667,22" sap2010:WorkflowViewState.IdRef="Expand_Archive_1" Path="[zipPath]" />
-            <Assign sap2010:Annotation.AnnotationText="Intermediary project step - &#xD;&#xA;Get all the files from the unziped folder with the all the files inside on it, that will be use later on." sap:VirtualizedContainerService.HintSize="1544.66666666667,140.666666666667" sap2010:WorkflowViewState.IdRef="Assign_3">
+            </ui:RenameFolderX>
+            <Assign sap2010:Annotation.AnnotationText="Intermediary project step - &#xA;Get all the files from the unziped folder with the all the files inside on it, that will be use later on." sap:VirtualizedContainerService.HintSize="1486.66666666667,140.666666666667" sap2010:WorkflowViewState.IdRef="Assign_12">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[strFolderPath]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">["C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\nd340-c1-intro-to-uipath-rpa-project-starter-master"]</InArgument>
+                <InArgument x:TypeArguments="x:String">["C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\AnnualReports"]</InArgument>
               </Assign.Value>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -179,7 +178,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="1544.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign sap:VirtualizedContainerService.HintSize="1486.66666666667,62" sap2010:WorkflowViewState.IdRef="Assign_13">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">[arrFiles]</OutArgument>
               </Assign.To>
@@ -187,100 +186,147 @@
                 <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(strFolderPath,"*")]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This is used to display all the files that will be use to create a sort process that will be used later on." DisplayName="Get visual of all files in data structure" sap:VirtualizedContainerService.HintSize="1544.66666666667,1912.66666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrFiles]">
-              <ui:ForEach.Body>
-                <ActivityAction x:TypeArguments="x:String">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:String" Name="item" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1508,1743.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:Boolean" Name="hasNumbers" />
-                      <Variable x:TypeArguments="x:String" Name="numbersDate" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:IsMatch DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="1466,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[item.ToString]" IsBuilderTabModified="False" Pattern="\d{8}" RegexOption="IgnoreCase, Compiled" Result="[hasNumbers]" />
-                    <If Condition="[hasNumbers]" sap:VirtualizedContainerService.HintSize="1466,1552.66666666667" sap2010:WorkflowViewState.IdRef="If_1">
-                      <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="1320,1398.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                          <Sequence.Variables>
-                            <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchYear" />
-                            <Variable x:TypeArguments="x:String" Name="strDate" />
-                          </Sequence.Variables>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:Matches sap:VirtualizedContainerService.HintSize="1278,58.6666666666667" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[item.ToString]" IsBuilderTabModified="False" Pattern="\d{4}.\w{3}" RegexOption="IgnoreCase, Compiled" Result="[matchYear]" />
-                          <If Condition="[matchYear.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="1278,1208" sap2010:WorkflowViewState.IdRef="If_2">
-                            <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="898,1054" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                                <Sequence.Variables>
-                                  <Variable x:TypeArguments="x:String" Name="strYear" />
-                                  <Variable x:TypeArguments="x:Boolean" Name="IsFolderExists" />
-                                </Sequence.Variables>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="856,62" sap2010:WorkflowViewState.IdRef="Assign_7">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strDate]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[matchYear(0).Value]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="856,62" sap2010:WorkflowViewState.IdRef="Assign_8">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[strYear]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[strDate.Substring(strDate.Length -4)]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="856,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[strYear]" />
-                                <ui:PathExists DisplayName="Path Exists" Exists="[IsFolderExists]" sap:VirtualizedContainerService.HintSize="856,90.6666666666667" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot;+strYear]" PathType="Folder" />
-                                <If Condition="[IsFolderExists]" sap:VirtualizedContainerService.HintSize="856,528.666666666667" sap2010:WorkflowViewState.IdRef="If_3">
-                                  <If.Then>
-                                    <ui:MoveFile ContinueOnError="{x:Null}" Destination="[&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot;+strYear]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,162" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="nd340-c1-intro-to-uipath-rpa-project-starter-master" />
-                                  </If.Then>
-                                  <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="426,374.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="384,80.6666666666667" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot; + strYear]" />
-                                      <ui:MoveFile ContinueOnError="{x:Null}" Destination="[&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot; + strYear]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,162" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="True" Path="C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\nd340-c1-intro-to-uipath-rpa-project-starter-master" />
-                                    </Sequence>
-                                  </If.Else>
-                                </If>
-                              </Sequence>
-                            </If.Then>
-                            <If.Else>
-                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;No numbers on file's name&quot;]" />
-                            </If.Else>
-                          </If>
-                        </Sequence>
-                      </If.Then>
-                    </If>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEach.Body>
+            <Sequence DisplayName="restante_do__workflow" sap:VirtualizedContainerService.HintSize="1486.66666666667,2405.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </ui:ForEach>
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This is used to display all the files that will be use to create a sort process that will be used later on." DisplayName="Get visual of all files in data structure" sap:VirtualizedContainerService.HintSize="1444.66666666667,2313.33333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrFiles]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:String">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1408,2158" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="hasNumbers" />
+                        <Variable x:TypeArguments="x:String" Name="numbersDate" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:IsMatch sap2010:Annotation.AnnotationText="Looking for 8 digits pattern - date format - MMDDYYYY" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="1366,104" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[item.ToString]" IsBuilderTabModified="False" Pattern="\d{8}" RegexOption="IgnoreCase, Compiled" Result="[hasNumbers]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:IsMatch>
+                      <If Condition="[hasNumbers]" sap:VirtualizedContainerService.HintSize="1366,1922" sap2010:WorkflowViewState.IdRef="If_3">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="1220,1771.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchYear" />
+                              <Variable x:TypeArguments="x:String" Name="strDate" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Matches sap2010:Annotation.AnnotationText="Checks if the Date pattern exists, then extract this pattern(MMDDYYYY), and extract the Year number using substring method." sap:VirtualizedContainerService.HintSize="1178,120.666666666667" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[item.ToString]" IsBuilderTabModified="False" Pattern="\d{4}.\w{3}" RegexOption="IgnoreCase, Compiled" Result="[matchYear]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Matches>
+                            <If sap2010:Annotation.AnnotationText="Checking if the files has numbers in the part after &quot;Report_&quot;.If this is the case, the file has a date in its name, take the final four characters of the string -- Year" Condition="[matchYear.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="1178,1518.66666666667" sap2010:WorkflowViewState.IdRef="If_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="798,1337.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="strYear" />
+                                    <Variable x:TypeArguments="x:Boolean" Name="IsFolderExists" />
+                                    <Variable x:TypeArguments="x:String" Name="currentFile" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap2010:Annotation.AnnotationText="create strDate variable to holds date data." sap:VirtualizedContainerService.HintSize="756,92.6666666666667" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strDate]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[matchYear(0).Value]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <Assign sap2010:Annotation.AnnotationText="create variable strYear to hold Year number from substring method on the numbers from previous step." sap:VirtualizedContainerService.HintSize="756,124" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[strYear]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[strDate.Substring(strDate.Length -4)]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;The year in the file is: &quot; + strYear]" />
+                                  <ui:PathExists sap2010:Annotation.AnnotationText="Check if the Year folder exists or not - boolean operation  on IsFolderExists variable" DisplayName="Path Exists" Exists="[IsFolderExists]" sap:VirtualizedContainerService.HintSize="756,136" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot;+strYear]" PathType="Folder">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:PathExists>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Is the folder exists or not =  &quot;+ IsFolderExists.ToString]" />
+                                  <If sap2010:Annotation.AnnotationText="IsFolderExists is True - Then (move the *.pdf/xls to this Folder)&#xA;Else (create a Year folder and move the file into this new created folder)" Condition="[IsFolderExists]" sap:VirtualizedContainerService.HintSize="756,503.333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Move the file&quot;]" />
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,307.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,80.6666666666667" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot;+strYear]" />
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Folder created:  &quot;+&quot;C:\Users\FLI028\Desktop\RPA_projects\Sorting Annual Reports project\&quot;+strYear]" />
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;No numbers on file's name&quot;]" />
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </If.Then>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEach>
+            </Sequence>
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>

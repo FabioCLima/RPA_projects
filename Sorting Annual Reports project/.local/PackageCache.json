@@ -7,14 +7,15 @@
       },
       "Assemblies": [
         "C:\\Users\\FLI028\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper/16.0.0\\lib/net45/CsvHelper.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.2.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.excel.activities/2.9.5\\lib/net461/UiPath.Excel.Activities.Design.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.excel.activities/2.9.5\\lib/net461/UiPath.Excel.Activities.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.excel.activities/2.9.5\\lib/net461/UiPath.Excel.dll"
@@ -40,7 +41,7 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.identity.client/4.14.0\\lib/net45/Microsoft.Identity.Client.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/13.0.1\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.mail.activities/1.9.5\\lib/net461/MailKit.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.mail.activities/1.9.5\\lib/net461/MimeKit.dll",
@@ -49,63 +50,6 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.mail.activities/1.9.5\\lib/net461/UiPath.Mail.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.mail.activities\\1.9.5"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.System.Activities",
-        "Version": "20.10.4"
-      },
-      "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.features/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.bcl.asyncinterfaces/1.1.1\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration.binder/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.dependencyinjection/3.1.6\\lib/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.logging/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.logging.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.options/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.primitives/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.2.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.componentmodel.annotations/4.7.0\\lib/net461/System.ComponentModel.Annotations.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.io.pipelines/4.7.1\\lib/netstandard2.0/System.IO.Pipelines.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encodings.web/4.7.1\\lib/net461/System.Text.Encodings.Web.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.json/4.7.2\\lib/net461/System.Text.Json.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.channels/4.7.1\\lib/net461/System.Threading.Channels.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform/20.10.4\\lib/net461/UiPath.Platform.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/UiPath.System.Activities.dll"
-      ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4"
     },
     {
       "Package": {
@@ -123,19 +67,23 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/13.0.1\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\nlog/4.5.11\\lib/net45/NLog.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable/5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow/4.10.0\\lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath/20.10.7641.24102\\lib/UiPath.Interop.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.ocr.activities/2.4.1\\lib/net461/UiPath.OCR.Activities.Design.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.ocr.activities/2.4.1\\lib/net461/UiPath.OCR.Activities.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.ocr.activities/2.4.1\\lib/net461/UiPath.OCR.Core.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform/20.10.4\\lib/net461/UiPath.Platform.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client/1.2.20\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform/21.10.0\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.uiautomation.activities/20.10.9\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.uiautomation.activities/20.10.9\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.uiautomation.activities/20.10.9\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
@@ -173,7 +121,7 @@
         "Version": "1.1.1"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper/16.0.0\\lib/net45/CsvHelper.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll",
@@ -184,6 +132,9 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.bcl.asyncinterfaces/1.1.1\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.common/3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.csharp/3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.visualbasic/3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration.binder/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
@@ -194,36 +145,137 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.options/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.primitives/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.2.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/13.0.1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable/5.0.0\\lib/net461/System.Collections.Immutable.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.componentmodel.annotations/4.7.0\\lib/net461/System.ComponentModel.Annotations.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.io.pipelines/4.7.1\\lib/netstandard2.0/System.IO.Pipelines.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.management.automation/6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.reflection.metadata/5.0.0\\lib/net461/System.Reflection.Metadata.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encoding.codepages/4.5.1\\lib/net461/System.Text.Encoding.CodePages.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encodings.web/4.7.1\\lib/net461/System.Text.Encodings.Web.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.text.json/4.7.2\\lib/net461/System.Text.Json.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.channels/4.7.1\\lib/net461/System.Threading.Channels.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform/20.10.4\\lib/net461/UiPath.Platform.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/20.10.4\\lib/net461/UiPath.System.Activities.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform/21.10.0\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/21.10.2\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/21.10.2\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/21.10.2\\lib/net461/UiPath.System.Activities.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll",
         "C:\\Users\\FLI028\\.nuget\\packages\\uipathteam.archivelib.activity/1.1.1\\lib/net45/ArchiveLib.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipathteam.archivelib.activity\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "BalaReva.ZipUnzip.Activities",
+        "Version": "2020.4.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\balareva.zipunzip.activities/2020.4.3\\lib/BalaReva.Zip.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\balareva.zipunzip.activities/2020.4.3\\lib/BalaReva.Zip.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\dotnetzip.reduced/1.9.1.8\\lib/net20/Ionic.Zip.Reduced.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\ionic.zip/1.9.1.8\\lib/Ionic.Zip.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpcompress/0.26.0\\lib/net46/SharpCompress.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\balareva.zipunzip.activities\\2020.4.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "21.10.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper/16.0.0\\lib/net45/CsvHelper.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.http.features/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.bcl.asyncinterfaces/1.1.1\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.common/3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.csharp/3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.visualbasic/3.8.0\\lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.configuration.binder/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.dependencyinjection/3.1.6\\lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.logging/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.logging.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.options/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.extensions.primitives/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/13.0.1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable/5.0.0\\lib/net461/System.Collections.Immutable.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.componentmodel.annotations/4.7.0\\lib/net461/System.ComponentModel.Annotations.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.io.pipelines/4.7.1\\lib/netstandard2.0/System.IO.Pipelines.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.management.automation/6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.reflection.metadata/5.0.0\\lib/net461/System.Reflection.Metadata.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encoding.codepages/4.5.1\\lib/net461/System.Text.Encoding.CodePages.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encodings.web/4.7.1\\lib/net461/System.Text.Encodings.Web.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.json/4.7.2\\lib/net461/System.Text.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.channels/4.7.1\\lib/net461/System.Threading.Channels.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform/21.10.0\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/21.10.2\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/21.10.2\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities/21.10.2\\lib/net461/UiPath.System.Activities.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\21.10.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.VMware.Activities",
+        "Version": "1.1.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json/13.0.1\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib/1.3.3\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.data.common/4.3.0\\lib/net451/System.Data.Common.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.net.http/4.3.4\\lib/net46/System.Net.Http.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.algorithms/4.3.0\\lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.encoding/4.3.0\\lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.primitives/4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.x509certificates/4.3.0\\lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/UiPath.VMware.Activities.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/UiPath.VMware.Activities.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/UiPath.VMware.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/vapi-client-bindings.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/vapi-runtime.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/Vim25Service.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/VimService.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/VMware.Binding.Wcf.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities/1.1.7\\lib/net461/VMware.Vim.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7"
     }
   ],
   "Conflicts": [],
@@ -262,6 +314,24 @@
       "Version": "5.0.3",
       "Dependencies": []
     },
+    "BalaReva.ZipUnzip.Activities": {
+      "Id": "BalaReva.ZipUnzip.Activities",
+      "Version": "2020.4.3",
+      "Dependencies": [
+        {
+          "Item1": "DotNetZip.Reduced",
+          "Item2": "[1.9.1.8, )"
+        },
+        {
+          "Item1": "SharpCompress",
+          "Item2": "[0.26.0, )"
+        },
+        {
+          "Item1": "Ionic.Zip",
+          "Item2": "[1.9.1.8, )"
+        }
+      ]
+    },
     "BouncyCastle": {
       "Id": "BouncyCastle",
       "Version": "1.8.5",
@@ -279,12 +349,26 @@
     },
     "CsvHelper": {
       "Id": "CsvHelper",
-      "Version": "2.13.5",
-      "Dependencies": []
+      "Version": "16.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.4.0, )"
+        }
+      ]
     },
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
       "Version": "2.5.0",
+      "Dependencies": []
+    },
+    "DotNetZip.Reduced": {
+      "Id": "DotNetZip.Reduced",
+      "Version": "1.9.1.8",
       "Dependencies": []
     },
     "Extended.Wpf.Toolkit": {
@@ -380,6 +464,11 @@
     "interop.domino.dll": {
       "Id": "interop.domino.dll",
       "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "Ionic.Zip": {
+      "Id": "Ionic.Zip",
+      "Version": "1.9.1.8",
       "Dependencies": []
     },
     "Microsoft.AspNet.SignalR.Client": {
@@ -538,6 +627,70 @@
         }
       ]
     },
+    "Microsoft.CodeAnalysis.Analyzers": {
+      "Id": "Microsoft.CodeAnalysis.Analyzers",
+      "Version": "3.0.0",
+      "Dependencies": []
+    },
+    "Microsoft.CodeAnalysis.Common": {
+      "Id": "Microsoft.CodeAnalysis.Common",
+      "Version": "3.8.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CodeAnalysis.Analyzers",
+          "Item2": "[3.0.0, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.Reflection.Metadata",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "System.Text.Encoding.CodePages",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "Microsoft.CodeAnalysis.CSharp": {
+      "Id": "Microsoft.CodeAnalysis.CSharp",
+      "Version": "3.8.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CodeAnalysis.Common",
+          "Item2": "[3.8.0, 3.8.0]"
+        }
+      ]
+    },
+    "Microsoft.CodeAnalysis.VisualBasic": {
+      "Id": "Microsoft.CodeAnalysis.VisualBasic",
+      "Version": "3.8.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CodeAnalysis.Common",
+          "Item2": "[3.8.0, 3.8.0]"
+        }
+      ]
+    },
+    "Microsoft.CSharp": {
+      "Id": "Microsoft.CSharp",
+      "Version": "4.7.0",
+      "Dependencies": []
+    },
     "Microsoft.Exchange.WebServices": {
       "Id": "Microsoft.Exchange.WebServices",
       "Version": "2.2.0",
@@ -666,6 +819,11 @@
         }
       ]
     },
+    "Microsoft.VisualBasic": {
+      "Id": "Microsoft.VisualBasic",
+      "Version": "10.3.0",
+      "Dependencies": []
+    },
     "Microsoft.VisualStudio.OLE.Interop": {
       "Id": "Microsoft.VisualStudio.OLE.Interop",
       "Version": "7.10.6071",
@@ -673,7 +831,7 @@
     },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
-      "Version": "11.0.2",
+      "Version": "13.0.1",
       "Dependencies": []
     },
     "NLog": {
@@ -691,9 +849,19 @@
         }
       ]
     },
+    "SharpCompress": {
+      "Id": "SharpCompress",
+      "Version": "0.26.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
     "SharpZipLib": {
       "Id": "SharpZipLib",
-      "Version": "1.2.0",
+      "Version": "1.3.3",
       "Dependencies": []
     },
     "System.Buffers": {
@@ -703,12 +871,22 @@
     },
     "System.Collections.Immutable": {
       "Id": "System.Collections.Immutable",
-      "Version": "1.5.0",
-      "Dependencies": []
+      "Version": "5.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        }
+      ]
     },
     "System.ComponentModel.Annotations": {
       "Id": "System.ComponentModel.Annotations",
       "Version": "4.7.0",
+      "Dependencies": []
+    },
+    "System.Data.Common": {
+      "Id": "System.Data.Common",
+      "Version": "4.3.0",
       "Dependencies": []
     },
     "System.IO.Abstractions": {
@@ -734,6 +912,11 @@
         }
       ]
     },
+    "System.Management.Automation": {
+      "Id": "System.Management.Automation",
+      "Version": "6.1.7601.17515",
+      "Dependencies": []
+    },
     "System.Memory": {
       "Id": "System.Memory",
       "Version": "4.5.4",
@@ -752,15 +935,79 @@
         }
       ]
     },
+    "System.Net.Http": {
+      "Id": "System.Net.Http",
+      "Version": "4.3.4",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.X509Certificates",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.Numerics.Vectors": {
       "Id": "System.Numerics.Vectors",
       "Version": "4.5.0",
       "Dependencies": []
     },
+    "System.Reflection.Metadata": {
+      "Id": "System.Reflection.Metadata",
+      "Version": "5.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[5.0.0, )"
+        }
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe": {
       "Id": "System.Runtime.CompilerServices.Unsafe",
       "Version": "4.7.1",
       "Dependencies": []
+    },
+    "System.Security.Cryptography.Algorithms": {
+      "Id": "System.Security.Cryptography.Algorithms",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Primitives",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Security.Cryptography.Encoding": {
+      "Id": "System.Security.Cryptography.Encoding",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.Primitives": {
+      "Id": "System.Security.Cryptography.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.X509Certificates": {
+      "Id": "System.Security.Cryptography.X509Certificates",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Algorithms",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Encoding",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Text.Encoding.CodePages": {
+      "Id": "System.Text.Encoding.CodePages",
+      "Version": "4.5.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.2, )"
+        }
+      ]
     },
     "System.Text.Encodings.Web": {
       "Id": "System.Text.Encodings.Web",
@@ -822,7 +1069,7 @@
     },
     "System.Threading.Tasks.Dataflow": {
       "Id": "System.Threading.Tasks.Dataflow",
-      "Version": "4.10.0",
+      "Version": "5.0.0",
       "Dependencies": []
     },
     "System.Threading.Tasks.Extensions": {
@@ -962,7 +1209,7 @@
     },
     "UiPath.Platform": {
       "Id": "UiPath.Platform",
-      "Version": "20.10.4",
+      "Version": "21.10.0",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -980,15 +1227,11 @@
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "20.10.4",
+      "Version": "21.10.2",
       "Dependencies": [
         {
-          "Item1": "UiPath.Platform",
-          "Item2": "[20.10.4, )"
-        },
-        {
           "Item1": "CsvHelper",
-          "Item2": "[2.13.5, )"
+          "Item2": "[16.0.0, )"
         },
         {
           "Item1": "Microsoft.AspNet.SignalR.Client",
@@ -999,12 +1242,28 @@
           "Item2": "[3.1.6, )"
         },
         {
-          "Item1": "Microsoft.Bcl.AsyncInterfaces",
-          "Item2": "[1.1.1, )"
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "Microsoft.CodeAnalysis.CSharp",
+          "Item2": "[3.8.0, )"
+        },
+        {
+          "Item1": "Microsoft.CodeAnalysis.Common",
+          "Item2": "[3.8.0, )"
+        },
+        {
+          "Item1": "Microsoft.CodeAnalysis.VisualBasic",
+          "Item2": "[3.8.0, )"
         },
         {
           "Item1": "Microsoft.Rest.ClientRuntime",
           "Item2": "[2.3.21, )"
+        },
+        {
+          "Item1": "Microsoft.VisualBasic",
+          "Item2": "[10.3.0, )"
         },
         {
           "Item1": "Newtonsoft.Json",
@@ -1015,38 +1274,34 @@
           "Item2": "[1.2.0, )"
         },
         {
-          "Item1": "System.Buffers",
-          "Item2": "[4.5.1, )"
+          "Item1": "System.Management.Automation",
+          "Item2": "[6.1.7601.17515, )"
         },
         {
-          "Item1": "System.Memory",
-          "Item2": "[4.5.4, )"
+          "Item1": "UiPath.Platform",
+          "Item2": "[21.10.0, )"
         },
         {
-          "Item1": "System.Numerics.Vectors",
-          "Item2": "[4.5.0, )"
-        },
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[4.7.1, )"
-        },
-        {
-          "Item1": "System.Threading.Tasks.Extensions",
-          "Item2": "[4.5.4, )"
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
         }
       ]
     },
     "UiPath.Telemetry.Client": {
       "Id": "UiPath.Telemetry.Client",
-      "Version": "1.2.20",
+      "Version": "1.5.3",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.1, )"
+          "Item2": "[11.0.2, )"
         },
         {
           "Item1": "System.Threading.Tasks.Dataflow",
-          "Item2": "[4.10.0, )"
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
         }
       ]
     },
@@ -1110,6 +1365,36 @@
         }
       ]
     },
+    "UiPath.VMware.Activities": {
+      "Id": "UiPath.VMware.Activities",
+      "Version": "1.1.7",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.3.3, )"
+        },
+        {
+          "Item1": "System.Data.Common",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.4, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
+        }
+      ]
+    },
     "UiPathTeam.ArchiveLib.Activity": {
       "Id": "UiPathTeam.ArchiveLib.Activity",
       "Version": "1.1.1",
@@ -1164,6 +1449,17 @@
     },
     {
       "Package": {
+        "Id": "BalaReva.ZipUnzip.Activities",
+        "Version": "2020.4.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\balareva.zipunzip.activities\\2020.4.3\\lib\\BalaReva.Zip.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\balareva.zipunzip.activities\\2020.4.3\\lib\\BalaReva.Zip.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\balareva.zipunzip.activities\\2020.4.3"
+    },
+    {
+      "Package": {
         "Id": "BouncyCastle",
         "Version": "1.8.5"
       },
@@ -1185,12 +1481,12 @@
     {
       "Package": {
         "Id": "CsvHelper",
-        "Version": "2.13.5"
+        "Version": "16.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper\\2.13.5\\lib\\net40-client\\CsvHelper.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper\\16.0.0\\lib\\net45\\CsvHelper.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper\\2.13.5"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\csvhelper\\16.0.0"
     },
     {
       "Package": {
@@ -1201,6 +1497,16 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib\\DocumentFormat.OpenXml.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\documentformat.openxml\\2.5.0"
+    },
+    {
+      "Package": {
+        "Id": "DotNetZip.Reduced",
+        "Version": "1.9.1.8"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\dotnetzip.reduced\\1.9.1.8\\lib\\net20\\Ionic.Zip.Reduced.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\dotnetzip.reduced\\1.9.1.8"
     },
     {
       "Package": {
@@ -1297,6 +1603,16 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\interop.domino.dll\\1.0.0\\lib\\Interop.Domino.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\interop.domino.dll\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Ionic.Zip",
+        "Version": "1.9.1.8"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\ionic.zip\\1.9.1.8\\lib\\Ionic.Zip.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\ionic.zip\\1.9.1.8"
     },
     {
       "Package": {
@@ -1397,6 +1713,54 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib\\net461\\Microsoft.Bcl.AsyncInterfaces.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CodeAnalysis.Analyzers",
+        "Version": "3.0.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CodeAnalysis.Common",
+        "Version": "3.8.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\lib\\netstandard2.0\\Microsoft.CodeAnalysis.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CodeAnalysis.CSharp",
+        "Version": "3.8.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\lib\\netstandard2.0\\Microsoft.CodeAnalysis.CSharp.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CodeAnalysis.VisualBasic",
+        "Version": "3.8.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0\\lib\\netstandard2.0\\Microsoft.CodeAnalysis.VisualBasic.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.8.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CSharp",
+        "Version": "4.7.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.csharp\\4.7.0\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.csharp\\4.7.0"
     },
     {
       "Package": {
@@ -1521,6 +1885,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.VisualBasic",
+        "Version": "10.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\microsoft.visualbasic\\10.3.0"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.VisualStudio.OLE.Interop",
         "Version": "7.10.6071"
       },
@@ -1532,12 +1906,12 @@
     {
       "Package": {
         "Id": "Newtonsoft.Json",
-        "Version": "11.0.2"
+        "Version": "13.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json\\11.0.2\\lib\\net45\\Newtonsoft.Json.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib\\net45\\Newtonsoft.Json.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json\\11.0.2"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\newtonsoft.json\\13.0.1"
     },
     {
       "Package": {
@@ -1564,13 +1938,23 @@
     },
     {
       "Package": {
-        "Id": "SharpZipLib",
-        "Version": "1.2.0"
+        "Id": "SharpCompress",
+        "Version": "0.26.0"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib\\1.2.0\\lib\\net45\\ICSharpCode.SharpZipLib.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpcompress\\0.26.0\\lib\\net46\\SharpCompress.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib\\1.2.0"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\sharpcompress\\0.26.0"
+    },
+    {
+      "Package": {
+        "Id": "SharpZipLib",
+        "Version": "1.3.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib\\1.3.3\\lib\\net45\\ICSharpCode.SharpZipLib.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\sharpziplib\\1.3.3"
     },
     {
       "Package": {
@@ -1585,12 +1969,12 @@
     {
       "Package": {
         "Id": "System.Collections.Immutable",
-        "Version": "1.5.0"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable\\1.5.0\\lib\\netstandard2.0\\System.Collections.Immutable.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib\\net461\\System.Collections.Immutable.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable\\1.5.0"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.collections.immutable\\5.0.0"
     },
     {
       "Package": {
@@ -1601,6 +1985,16 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\lib\\net461\\System.ComponentModel.Annotations.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Data.Common",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.data.common\\4.3.0\\lib\\net451\\System.Data.Common.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.data.common\\4.3.0"
     },
     {
       "Package": {
@@ -1624,6 +2018,16 @@
     },
     {
       "Package": {
+        "Id": "System.Management.Automation",
+        "Version": "6.1.7601.17515"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.management.automation\\6.1.7601.17515\\lib\\net45\\System.Management.Automation.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.management.automation\\6.1.7601.17515"
+    },
+    {
+      "Package": {
         "Id": "System.Memory",
         "Version": "4.5.4"
       },
@@ -1631,6 +2035,16 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\system.memory\\4.5.4\\lib\\net461\\System.Memory.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.memory\\4.5.4"
+    },
+    {
+      "Package": {
+        "Id": "System.Net.Http",
+        "Version": "4.3.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.net.http\\4.3.4\\lib\\net46\\System.Net.Http.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.net.http\\4.3.4"
     },
     {
       "Package": {
@@ -1644,6 +2058,16 @@
     },
     {
       "Package": {
+        "Id": "System.Reflection.Metadata",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\lib\\net461\\System.Reflection.Metadata.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.reflection.metadata\\5.0.0"
+    },
+    {
+      "Package": {
         "Id": "System.Runtime.CompilerServices.Unsafe",
         "Version": "4.7.1"
       },
@@ -1651,6 +2075,56 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib\\net461\\System.Runtime.CompilerServices.Unsafe.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Algorithms",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\lib\\net461\\System.Security.Cryptography.Algorithms.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Encoding",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\lib\\net46\\System.Security.Cryptography.Encoding.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\lib\\net46\\System.Security.Cryptography.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.X509Certificates",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\lib\\net461\\System.Security.Cryptography.X509Certificates.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Text.Encoding.CodePages",
+        "Version": "4.5.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\lib\\net461\\System.Text.Encoding.CodePages.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1"
     },
     {
       "Package": {
@@ -1685,12 +2159,12 @@
     {
       "Package": {
         "Id": "System.Threading.Tasks.Dataflow",
-        "Version": "4.10.0"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow\\4.10.0\\lib\\netstandard2.0\\System.Threading.Tasks.Dataflow.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\lib\\net461\\System.Threading.Tasks.Dataflow.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow\\4.10.0"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0"
     },
     {
       "Package": {
@@ -1773,44 +2247,34 @@
     {
       "Package": {
         "Id": "UiPath.Platform",
-        "Version": "20.10.4"
+        "Version": "21.10.0"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform\\20.10.4\\lib\\net461\\UiPath.Platform.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform\\21.10.0\\lib\\net461\\UiPath.Platform.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform\\20.10.4"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.platform\\21.10.0"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "20.10.4"
+        "Version": "21.10.2"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\CustomInputForm.exe",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\UiPath.OrchestratorClient.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\UiPath.System.Activities.Design.dll",
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4\\lib\\net461\\UiPath.System.Activities.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\21.10.2\\lib\\net461\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\21.10.2\\lib\\net461\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\21.10.2\\lib\\net461\\UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\20.10.4"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.system.activities\\21.10.2"
     },
     {
       "Package": {
         "Id": "UiPath.Telemetry.Client",
-        "Version": "1.2.20"
+        "Version": "1.5.3"
       },
       "Assemblies": [
-        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client\\1.2.20\\lib\\net461\\TelemetryClient.dll"
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib\\net461\\TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client\\1.2.20"
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.telemetry.client\\1.5.3"
     },
     {
       "Package": {
@@ -1852,6 +2316,24 @@
         "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vision\\2.2.0\\lib\\net461\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vision\\2.2.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.VMware.Activities",
+        "Version": "1.1.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\UiPath.VMware.Activities.Design.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\UiPath.VMware.Activities.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\UiPath.VMware.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\vapi-client-bindings.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\vapi-runtime.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\Vim25Service.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\VimService.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\VMware.Binding.Wcf.dll",
+        "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7\\lib\\net461\\VMware.Vim.dll"
+      ],
+      "Path": "C:\\Users\\FLI028\\.nuget\\packages\\uipath.vmware.activities\\1.1.7"
     },
     {
       "Package": {

@@ -3,10 +3,12 @@
   "description": "Automation for a process that sorts files in a given folder into subfolders on the date in the file name.",
   "main": "Main.xaml",
   "dependencies": {
+    "BalaReva.ZipUnzip.Activities": "[2020.4.3]",
     "UiPath.Excel.Activities": "[2.9.5]",
     "UiPath.Mail.Activities": "[1.9.5]",
-    "UiPath.System.Activities": "[20.10.4]",
+    "UiPath.System.Activities": "[21.10.2]",
     "UiPath.UIAutomation.Activities": "[20.10.9]",
+    "UiPath.VMware.Activities": "[1.1.7]",
     "UiPathTeam.ArchiveLib.Activity": "[1.1.1]"
   },
   "webServices": [],
