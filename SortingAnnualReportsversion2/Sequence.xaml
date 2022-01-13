@@ -1,0 +1,270 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1752.66666666667,3152.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1762.66666666667,3048" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="In the previous steps, the robot downloaded, moved and extracted the FOLDER into the Project directory. &#xA;In this step the robot is going to sort the files from the downloaded extracted FOLDER into the desired FOLDER depending upon the name of the file,." DisplayName="Sorting the files  into the desired FOLDER" sap:VirtualizedContainerService.HintSize="1720.66666666667,2956" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="In this &quot;For Each&quot; activity, the robot is going to sort all the files into FOLDERs depending upon the project requiraments." DisplayName="For Each one of &quot;the file&quot; from the array variable " sap:VirtualizedContainerService.HintSize="1678.66666666667,2684" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ArrayOfFiles]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Sort of the files " sap:VirtualizedContainerService.HintSize="1642,2514.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap2010:Annotation.AnnotationText="In this assign activiy the robot is getting only the name of the file to use later on in the workflow." sap:VirtualizedContainerService.HintSize="1600,124" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[AuxVar]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[item.ToString.Split("\"c).Last.ToString]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1600,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[AuxVar]" />
+              <ui:IsMatch sap2010:Annotation.AnnotationText="In this activity the robot will create boolean variable called HasNumbers, it is going to use this variable later on as condition in the IF activity&#xA;Looking for 8 digits pattern - date format - MMDDYYYY" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="1600,154" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[auxVar]" IsBuilderTabModified="False" Pattern="\d{8}" RegexOption="IgnoreCase, Compiled" Result="[HasNumbers]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:IsMatch>
+              <If sap2010:Annotation.AnnotationText="Checking if the file has pattern number - Date in its name. &#xA;condition &quot;hasNumbers&quot; in the file string name." Condition="[HasNumbers]" DisplayName="Checking if the file has numbers on its name" sap:VirtualizedContainerService.HintSize="1600,1930" sap2010:WorkflowViewState.IdRef="If_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="1128,1730.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Matches sap2010:Annotation.AnnotationText="Checks if the Date pattern exists, then extract this pattern(MMDDYYYY), and extract the Year number using substring method." sap:VirtualizedContainerService.HintSize="1086,120.666666666667" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[auxVar]" IsBuilderTabModified="False" Pattern="\d{4}.\w{3}" RegexOption="IgnoreCase, Compiled" Result="[MatchYearPattern]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:Matches>
+                    <If sap2010:Annotation.AnnotationText="Checking if the files has numbers in the part after &quot;Report_&quot;.If this is the case, the file has a date in its name, take the final four characters of the string -- Year&#xA;. " Condition="[MatchYearPattern.Count &gt; 0]" DisplayName="IF the files has date pattern number on it" sap:VirtualizedContainerService.HintSize="1086,1478" sap2010:WorkflowViewState.IdRef="If_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap2010:Annotation.AnnotationText="In this sequence after the robot created the boolean variable HasNumber. Its performs another if activities to sorts the files." DisplayName="IF HasNumbers - Then sequence" sap:VirtualizedContainerService.HintSize="940,1278.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap2010:Annotation.AnnotationText="In this assign activity the robot create the auxiliar variable StrDate to holds the date pattern extracted number string." DisplayName="Auxiliar string variable" sap:VirtualizedContainerService.HintSize="898,124" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[StrDate]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[matchYearPattern(0).Value]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <Assign sap2010:Annotation.AnnotationText="create variable StrYear to hold Year number from substring method on the numbers from previous step." DisplayName="Auxiliar string variable - StrYear" sap:VirtualizedContainerService.HintSize="898,124" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[StrYear]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[strDate.Substring(strDate.Length -4)]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <ui:PathExists sap2010:Annotation.AnnotationText="Check if the Year folder exists or not - boolean operation  on IsFolderExists variable" DisplayName="Path Exists" Exists="[IsFolderExists]" sap:VirtualizedContainerService.HintSize="898,136" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;C:\Users\FLI028\Desktop\RPA_projects\SortingAnnualReportsversion2\&quot;+StrYear]" PathType="Folder">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:PathExists>
+                          <If sap2010:Annotation.AnnotationText="If the Year folder exist, in the previous step the robot create the boolean variable: IsFolderExists&#xA;THEN: move the File to there. &#xA;ELSE: create the Year folder and move the File to the Year folder recently created" Condition="[IsFolderExists]" DisplayName="Move the file to the Year folder or create Year folder and move the file" sap:VirtualizedContainerService.HintSize="898,652" sap2010:WorkflowViewState.IdRef="If_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Sequence DisplayName="Moving the file to the already existe Year Folder" sap:VirtualizedContainerService.HintSize="426,284.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Moving the file to the already existed Year folder." Destination="[&quot;C:\Users\FLI028\Desktop\RPA_projects\SortingAnnualReportsversion2\&quot; + StrYear]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,192.666666666667" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[&quot;nd340-c1-intro-to-uipath-rpa-project-starter-master\&quot; + AuxVar]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:MoveFile>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Create the Year Folder and then moving the file to there" sap:VirtualizedContainerService.HintSize="426,436" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:CreateDirectory ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Creating the Year folder step" DisplayName="Create the  Year Folder" sap:VirtualizedContainerService.HintSize="384,111.333333333333" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;C:\Users\FLI028\Desktop\RPA_projects\SortingAnnualReportsversion2\&quot; + StrYear]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CreateDirectory>
+                                <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="After creating the Folder" Destination="[&quot;C:\Users\FLI028\Desktop\RPA_projects\SortingAnnualReportsversion2\&quot; + StrYear]" DisplayName="Moving the file to the newly created folder" sap:VirtualizedContainerService.HintSize="384,192.666666666667" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[&quot;nd340-c1-intro-to-uipath-rpa-project-starter-master\&quot; + AuxVar]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:MoveFile>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="If the file has no date pattern numbers sequence" sap:VirtualizedContainerService.HintSize="426,764" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="CurrentDate" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap2010:Annotation.AnnotationText="In this assign activity the robot is going to get the current date from the system and use the format MMDDYYYY" DisplayName="Get the currentDate activity" sap:VirtualizedContainerService.HintSize="384,124" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[CurrentDate]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("MMddyyyy")]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                    <ui:CreateDirectory ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="in this step, after checking if there is a  Year folder, the robot create one " DisplayName="Create the Year Folder" sap:VirtualizedContainerService.HintSize="384,126" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[ProjectDirectoryPath+ &quot;\&quot;+CurrentDate]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CreateDirectory>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="384,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[ProjectDirectoryPath +&quot;\&quot;+ CurrentDate]" />
+                    <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="After create the newly Year Folder in the previous step the robot move the files to this Folder" Destination="[&quot;C:\Users\FLI028\Desktop\RPA_projects\SortingAnnualReportsversion2\&quot;+currentDate]" DisplayName="Move File from original folder to the newly created one" sap:VirtualizedContainerService.HintSize="384,207.333333333333" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="True" Path="[&quot;nd340-c1-intro-to-uipath-rpa-project-starter-master\&quot; + AuxVar]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:MoveFile>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1678.66666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;The workflow has been finished&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

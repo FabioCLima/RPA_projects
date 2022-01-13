@@ -1,0 +1,51 @@
+Techno
+Computers
+
+1133 South Cavalier Drive
+Alamo, Tennessee,
+United Sates of America
++17319696651
+TIN: 14123456789
+Pin Code 343567
+
+Bill to:
+M/s:
+Rachel Green,
+Friends Building Room No.205
+Bellmont, Illinois, INVOICE
+Pin Code 5646,
+United State of America
+TIN: 1412349008
+Contact +3435677532
+
+Invoice # 40874
+Invoice Date: Apr 04, 2020
+Due Date: Apr 15, 2020
+
+ID DESCRIPTION QTY PRICE TOTAL
+
+01 Zebronics Crystal Pro Web Camera (red) 1 600.00 600.00
+
+02 HP Desktop C2500 Keyboard+Mouse 1 1500.00 1500.00
+
+03 Logitech B170 Wireless Mouse (Black) 2 600.00 1200.00
+
+04 Logitech B525 Commercial HD Webcam 1 2000.00 2000.00
+
+05 Video Graphics Adapters 1 2700.00 2700.00
+
+06 Techair Hard case - Flip cover for tablet - PET - Black 1 2000.00 2000.00
+
+07 HP Docking Station 1 800.00 800.00
+
+08 CONNEkT GEAR - Patch cable 1 100.00 100.00
+
+09 Speakers - Logitech 1 300.00 300.00
+
+10 HP 4 GB for Desktop Mini PC 1 2000.00 2000.00
+
+11 PORT Torino - Notebook sleeve - 14" - black 1 1900.00 1900.00
+
+Sub Total 15100.00
+GST 8% 1208.00
+Total 16308.00
