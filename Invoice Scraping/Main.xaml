@@ -1,6 +1,17 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="908.666666666667,3202" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="isdatafolder_exists" Type="InArgument(x:Boolean)" />
+  </x:Members>
+  <this:Main.isdatafolder_exists>
+    <InArgument x:TypeArguments="x:Boolean" />
+  </this:Main.isdatafolder_exists>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1735.33333333333,4013.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="30">
+    <scg:List x:TypeArguments="x:String" Capacity="60">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -31,6 +42,9 @@
       <x:String>System.Runtime.InteropServices</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
       <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -57,11 +71,16 @@
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="1 - real the last unread emails from your &quot;outlook&quot; mail box&#xA;&#xA;2- Download all the attachments with a naming convention of &#xA;&quot;CustomerName_InvoiceDate_InvoiceNumber.pdf&quot;" DisplayName="Project Steps" sap:VirtualizedContainerService.HintSize="918.666666666667,3137.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="1 - real the last unread emails from your &quot;outlook&quot; mail box&#xA;&#xA;2- Download all the attachments with a naming convention of &#xA;&quot;CustomerName_InvoiceDate_InvoiceNumber.pdf&quot;" DisplayName="Project Steps" sap:VirtualizedContainerService.HintSize="918.666666666667,4827.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="fabio.lima@wartsila.com" Name="mail_account" />
       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="unread_emails" />
       <Variable x:TypeArguments="x:String" Default="Techno Computers" Name="subject" />
+      <Variable x:TypeArguments="x:String" Name="data_folder_path">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\Users\FLI028\Desktop\RPA_projects\Invoice Scraping\data_folder</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -78,7 +97,7 @@
       <ui:GetOutlookMailMessages Filter="{x:Null}" TimeoutMS="{x:Null}" Account="[mail_account]" DisplayName="Get unread mails" GetAttachements="False" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[unread_emails]" OnlyUnreadMessages="True" Top="30" />
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Step 1 of the automation finished - get the emails&quot;]" />
     </Sequence>
-    <Sequence DisplayName="Step 2" sap:VirtualizedContainerService.HintSize="876.666666666667,717.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Step 2" sap:VirtualizedContainerService.HintSize="876.666666666667,852" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Default="C:\Users\FLI028\Desktop\RPA_projects\Invoice Scraping\Invoices" Name="attachments_folder" />
       </Sequence.Variables>
@@ -102,12 +121,15 @@
               <If Condition="[mail.Subject.Contains(subject)]" DisplayName="If - Subject condition - &quot;Techno Computers&quot;" sap:VirtualizedContainerService.HintSize="756,394.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
                   <Sequence DisplayName="Attachments operations" sap:VirtualizedContainerService.HintSize="376,240.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="data_folder" />
+                    </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:SaveMailAttachments Attachments="{x:Null}" sap2010:Annotation.AnnotationText="The robot will download all the attachments with a naming convention of &#xA;CustomerName_InvoiceDate_InvoiceNumber.pdf" DisplayName="Save Attachments - Download the attachments contains a naming convention on it" Filter="([A-z]+_\d{8}_\d+.\w{3})" FolderPath="[attachments_folder]" sap:VirtualizedContainerService.HintSize="334,148.666666666667" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[mail]">
+                    <ui:SaveMailAttachments Attachments="{x:Null}" sap2010:Annotation.AnnotationText="The robot will download all the attachments with a naming convention of &#xA;CustomerName_InvoiceDate_InvoiceNumber.pdf" DisplayName="Save Attachments - Download the attachments contains a naming convention on it" Filter="([A-z]+_\d{8}_\d+.\w{3})" FolderPath="data_folder" sap:VirtualizedContainerService.HintSize="334,148.666666666667" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[mail]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -124,7 +146,74 @@
           </ActivityAction>
         </ui:ForEach.Body>
       </ui:ForEach>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="834.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Step 2 of the automation finished - download all the attachments with naming convention&quot;]" />
     </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Program a Robot to save the attachment files in the data folder which has already been created or create it in the Project directory.&#xD;&#xA;&#xD;&#xA;ps : In the step before we already create the &quot;data folder&quot;, if not the robot will do it." DisplayName="Step 3 - check if the data folder exists" sap:VirtualizedContainerService.HintSize="876.666666666667,294.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:PathExists DisplayName="Path Exists" Exists="[isdatafolder_exists]" sap:VirtualizedContainerService.HintSize="334,90.6666666666667" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="C:\Users\FLI028\Desktop\RPA_projects\Invoice Scraping\data_folder" PathType="Folder" />
+    </Sequence>
+    <If sap2010:Annotation.AnnotationText="If the data folder exist,&#xA;THEN: move the File to there.&#xA;ELSE: create the Year folder and move the File to the Year folder recently created" Condition="[isdatafolder_exists]" DisplayName="If - check if  data folder already has created or create it" sap:VirtualizedContainerService.HintSize="876.666666666667,1046" sap2010:WorkflowViewState.IdRef="If_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="376,166.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Comment sap:VirtualizedContainerService.HintSize="334,74.6666666666667" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// The Data folder already exists and all the pdf attached files are there." />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="426,810" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="s:String[]" Name="aux_var" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="384,80.6666666666667" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[data_folder_path]" />
+          <Assign sap:VirtualizedContainerService.HintSize="384,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:String[]">[aux_var]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(data_folder_path, ".pdf")]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="384,293.333333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[aux_var]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="file" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="271.333333333333,154.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[file.ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+          <ui:MoveFile ContinueOnError="{x:Null}" Destination="C:\Users\FLI028\Desktop\RPA_projects\Invoice Scraping\data_folder" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,162" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="C:\Users\FLI028\Desktop\RPA_projects\Invoice Scraping" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="876.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Step 3 - All the attached files have been saved into the Data folder in project directory&quot;]" />
     <Sequence sap2010:Annotation.AnnotationText="Program a Robot that will “extract the relevant fields from the document”:&#xA;&#xA;InvoiceNo&#xA;InvoiceDate&#xD;&#xA;-&gt;Order Information&#xD;&#xA;--- ItemNo&#xD;&#xA;--- Description&#xD;&#xA;--- Quantity&#xD;&#xA;--- Price&#xD;&#xA;--- SubTotal&#xD;&#xA;--- GST&#xD;&#xA;--- Total&#xD;&#xA;&#xA;" DisplayName="Step 4 - Extract data from pdfs " sap:VirtualizedContainerService.HintSize="876.666666666667,1920.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="pdf_output" />
@@ -132,7 +221,7 @@
         <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="invoice_date" />
         <Variable x:TypeArguments="sc:IEnumerable" Name="files_attached">
           <Variable.Default>
-            <mva:VisualBasicValue x:TypeArguments="sc:IEnumerable" ExpressionText="Directory.GetFiles(&quot;Invoices\&quot;,&quot;*.pdf&quot;)" />
+            <mva:VisualBasicValue x:TypeArguments="sc:IEnumerable" ExpressionText="Directory.GetFiles(&quot;data_folder\&quot;,&quot;*.pdf&quot;)" />
           </Variable.Default>
         </Variable>
       </Sequence.Variables>
@@ -142,7 +231,7 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEach x:TypeArguments="sc:IEnumerable" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each pdf file within attached folder (&quot;Invoices&quot;), the robot will extract each piece of required project information." DisplayName="For Each - Extraction of the details of each file attached" sap:VirtualizedContainerService.HintSize="412.666666666667,1583.33333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[files_attached]">
+      <ui:ForEach x:TypeArguments="sc:IEnumerable" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each pdf file within attached folder (&quot;Data folder&quot;), the robot will extract each piece of required project information." DisplayName="For Each - Extraction of the details of each file attached" sap:VirtualizedContainerService.HintSize="412.666666666667,1583.33333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[files_attached]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="sc:IEnumerable">
             <ActivityAction.Argument>
