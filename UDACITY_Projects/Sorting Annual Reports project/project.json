@@ -1,15 +1,13 @@
 {
-  "name": "Sorting Annual Reports project",
-  "description": "Automation for a process that sorts files in a given folder into subfolders on the date in the file name.",
+  "name": "Invoice Scraping",
+  "description": "In this project, you will develop an automation for a process that will scrape relevant data from invoices for further processing. The Robot will read through emails and download the invoices received in the form of an email attachment as a PDF. It will extract specific data and store those values in an Excel spreadsheet and a subset of values will be uploaded to the Orchestrator Queue. And finally, when you're finished, the robot will email the spreadsheet to you.",
   "main": "Main.xaml",
   "dependencies": {
-    "BalaReva.ZipUnzip.Activities": "[2020.4.3]",
     "UiPath.Excel.Activities": "[2.9.5]",
     "UiPath.Mail.Activities": "[1.9.5]",
-    "UiPath.System.Activities": "[21.10.2]",
-    "UiPath.UIAutomation.Activities": "[20.10.9]",
-    "UiPath.VMware.Activities": "[1.1.7]",
-    "UiPathTeam.ArchiveLib.Activity": "[1.1.1]"
+    "UiPath.PDF.Activities": "[3.4.1]",
+    "UiPath.System.Activities": "[20.10.4]",
+    "UiPath.UIAutomation.Activities": "[20.10.9]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -46,7 +44,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "7b57c99b-29e6-4b81-a485-b004dfb09e56",
+      "uniqueId": "dc4548c9-5095-4544-a4c8-e91ea70a9551",
       "input": [],
       "output": []
     }
